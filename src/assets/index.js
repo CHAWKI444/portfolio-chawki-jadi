@@ -22,15 +22,47 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import shopify from "./company/starbucks.png";
+import starbucks from "./company/tesla.png";
+import tesla from "./company/shopify.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import logoo from "./logoo.png";
+import jobagent from "./jobagent.png"
+import calendar from "./calendar.png";
+import jobhunter from "./jobhunter.jpg";
+import graduation from "./graduation.jpg";
+import rag from "./rag.png";
+import graphagent from "./graphagent.png";
+import angular from "./tech/angular.png"
+import flask from "./tech/flask.jpg";
+import huggingface from "./tech/huggingface.png";
+import nestjs from "./tech/nestjs.svg";
+import python from "./tech/python.png";
+import pytorch from "./tech/pytorch.png";
+import pandas from "./tech/pandas.png"
+import langchain from "./tech/langchain.png"
+import tensorflow from "./tech/tensorflow.png";
+import mysql from "./tech/mysql.png"
 export {
+  mysql,
+  angular,
+    pandas,tensorflow,
+    langchain,
+    flask,
+    huggingface,
+    nestjs,
+    python,
+    pytorch,
+  rag,
+    graduation,
+    calendar,
+    jobagent,
+    jobhunter,
+    graphagent,
+  logoo,
   logo,
   backend,
   creator,
