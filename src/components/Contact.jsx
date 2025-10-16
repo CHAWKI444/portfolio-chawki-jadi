@@ -7,15 +7,14 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+import {toast} from 'sonner';
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
-
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -28,41 +27,52 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+    // 1. Show a loading toast and get its ID
+    const loadingToastId = toast.loading('Sending your message...');
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
+    try {
+      // Await the emailjs.send promise
+      await emailjs.send(
+          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          {
+            name: form.name,
+            to_name: 'Fedi', // Or any name you want
+            email: form.email,
+            to_email: 'mohamedfedi.bouabid@gmail.com',
+            message: form.message,
+          },
+          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
+
+      // 2. On success, update the toast to a green success message
+      toast.success('Thank you! I will get back to you soon.', {
+        id: loadingToastId,
+        duration: 4000, // Stays for 4 seconds
+      });
+
+      // Reset the form fields
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+
+      // 3. On failure, update the toast to a red error message
+      toast.error('Ahh, something went wrong. Please try again.', {
+        id: loadingToastId,
+        duration: 5000, // Stays for 5 seconds
+      });
+    } finally {
+      // 4. This runs after success OR failure to stop the loading state
+      setLoading(false);
+    }
   };
 
   return (
