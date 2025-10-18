@@ -203,7 +203,7 @@ const projects = [
   {
     name: "Calendar AI Agent",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "AI-powered assistant that helps users manage contacts and calendar events through natural conversation, allowing quick scheduling, event modification, and contact updates with ease.",
     tags: [
       {
         name: "Langchain",
@@ -228,7 +228,7 @@ const projects = [
   {
     name: "Job Search AI Agent",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "AI assistant that helps users manage job-related emails by classifying content with an LLM and visualizing insights on a dashboard.",
     tags: [
       {
         name: "Langchain",
@@ -257,7 +257,7 @@ const projects = [
   {
     name: "Graduation Project",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Social media analysis of electric vehicle discussions leveraging data processing, topic modeling, LLMs for relevance and sentiment, and graph metrics for structural insights.",
     tags: [
       {
         name: "NetworkX",
@@ -282,7 +282,7 @@ const projects = [
   {
     name: "JobHunter Internship",
     description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web platform that enables recruiters to post job offers and evaluate candidates using AI, extracting CV information and scoring applicants to streamline the hiring process.",
     tags: [
       {
         name: "NestJS",
@@ -311,7 +311,7 @@ const projects = [
   {
     name: "RAG Project",
     description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Local RAG system that enables users to query PDF files using embeddings stored in ChromaDB and processed with LLaMA models on an Ollama server.",
     tags: [
       {
         name: "Langchain",
@@ -340,7 +340,7 @@ const projects = [
   {
     name: "Graph query chatbot",
     description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Chatbot that allows users to query a Neo4j graph database in natural language, converting queries to Cypher and returning clear, user-friendly answers.",
     tags: [
       {
         name: "Langchain",
