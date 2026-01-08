@@ -289,7 +289,7 @@ const projects = [
       },
     ],
     image: graduation,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://drive.google.com/file/d/1TdjUazBDpdWwpye8zZFAU1Sr_RXCLDfg/view?usp=sharing",
   },
   {
     name: "JobHunter Internship",
