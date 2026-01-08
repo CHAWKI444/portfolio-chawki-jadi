@@ -32,8 +32,10 @@ import pytorch from "./tech/pytorch.png";
 import pandas from "./tech/pandas.png"
 import langchain from "./tech/langchain.png"
 import tensorflow from "./tech/tensorflow.png";
-import mysql from "./tech/mysql.png"
+import mysql from "./tech/mysql.png";
+import euklydia from "./company/euklydia.png"
 export {
+  euklydia,
   mysql,
   angular,
     pandas,tensorflow,

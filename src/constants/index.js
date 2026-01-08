@@ -16,7 +16,8 @@ import {
   jobagent,
   jobhunter,
   graduation,
-  rag, graphagent
+  rag, graphagent,
+    euklydia
 } from "../assets";
 
 export const navLinks = [
@@ -118,6 +119,17 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "AI Engineer",
+    company_name: "Euklydia",
+    icon: euklydia,
+    iconBg: "#ffffff",
+    date: "Nov 2025 - Present",
+    points: [
+      "Architecting autonomous AI agents using LangGraph and n8n to automate marketing workflows and social media sentiment analysis.",
+      "Training and deploying AI models into production via FastAPI and Docker, managing the full development lifecycle with Git.",
+    ],
+  },
   {
     title: "NLP & Graph R&D Intern",
     company_name: "EFREI",
