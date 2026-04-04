@@ -34,23 +34,25 @@ import langchain from "./tech/langchain.png"
 import tensorflow from "./tech/tensorflow.png";
 import mysql from "./tech/mysql.png";
 import euklydia from "./company/euklydia.png"
+import live_link from "./live_link.png";
+import hajjem from "./hajjem.png";
 export {
   euklydia,
   mysql,
   angular,
-    pandas,tensorflow,
-    langchain,
-    flask,
-    huggingface,
-    nestjs,
-    python,
-    pytorch,
+  pandas, tensorflow,
+  langchain,
+  flask,
+  huggingface,
+  nestjs,
+  python,
+  pytorch,
   rag,
-    graduation,
-    calendar,
-    jobagent,
-    jobhunter,
-    graphagent,
+  graduation,
+  calendar,
+  jobagent,
+  jobhunter,
+  graphagent,
   logoo,
   logo,
   backend,
@@ -69,4 +71,6 @@ export {
   starbucks,
   tesla,
   carrent,
+  hajjem,
+  live_link
 };

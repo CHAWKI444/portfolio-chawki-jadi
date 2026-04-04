@@ -17,7 +17,8 @@ import {
   jobhunter,
   graduation,
   rag, graphagent,
-    euklydia
+    euklydia,
+    hajjem
 } from "../assets";
 
 export const navLinks = [
@@ -212,6 +213,35 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "7ajjem",
+    description:
+      "A platform to solve waiting times at barber shops, enabling barbers to manage shops, queues, and services in a centralized system while facilitating the booking experience for clients.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NestJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: hajjem,
+    live_link: "https://7ajjem.tn",
+  },
   {
     name: "Calendar AI Agent",
     description:
